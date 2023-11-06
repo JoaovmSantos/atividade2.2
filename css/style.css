@@ -4527,6 +4527,7 @@
     border: 2px solid #a3b6ee;
     padding: 5px 10px;
     border-radius: 5px;
+    margin-bottom: 6px;
   }
   
   .card-body button{
@@ -11298,3 +11299,16 @@
     width: 100%;
   }
   
+@media screen and (max-width: 512px){
+  .card-body button{
+    display: flex;
+    justify-content: center;
+    float: left;
+    background-color: #30c47a;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+}
