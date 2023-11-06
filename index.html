@@ -285,25 +285,31 @@
 
                         <div class="col-lg-6">
 
-                            <!-- Basic Card Example -->
+                            <!-- Contador de Palavras -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Contador de Palavras</h6>
                                 </div>
                                 <div class="card-body">
                                     <input class="text-input col-lg-8" type="text" name="string" id="string-contador" placeholder="Insira a frase">
-                                    <button type="submit">Contar</button>
+                                    <button type="button" onclick="countWordOccurrences()">Contar</button>
+                                </div>
+                                <div class="card-footer">
+                                    Resultado: <span id="resultado-contador"></span>
                                 </div>
                             </div>
 
-                            <!-- Basic Card Example -->
+                            <!-- Inverter Capitalização -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Inverter Capitalização</h6>
                                 </div>
                                 <div class="card-body">
                                     <input class="text-input col-lg-8" type="text" name="string" id="string-inverter" placeholder="Insira a frase">
-                                    <button type="submit">Inverter</button>
+                                    <button type="button" onclick="invertCapitalization()">Inverter</button>
+                                </div>
+                                <div class="card-footer">
+                                    Resultado: <span id="resultado-inverter"></span>
                                 </div>
                             </div>
 
@@ -311,27 +317,35 @@
 
                         <div class="col-lg-6">
 
-                        <!-- Basic Card Example -->
+                        
+                            <!-- Gerar Acrônimo -->
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary">Gerar Acrônimo</h6>
                                 </div>
                                 <div class="card-body">
-                                    <input class="text-input col-lg-8" type="text" name="string-gerar" id="string" placeholder="Insira a frase">
-                                    <button type="submit">Gerar</button>
+                                    <input class="text-input col-lg-8" type="text" name="string" id="string-gerar" placeholder="Insira a frase">
+                                    <button type="button" onclick="generateAcronym()">Gerar</button>
+                                </div>
+                                <div class="card-footer">
+                                    Resultado: <span id="resultado-gerar"></span>
                                 </div>
                             </div>
 
-                        <!-- Basic Card Example -->
-                                <div class="card shadow mb-4">
-                                    <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Verificar Anagrama</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <input class="text-input col-lg-8" type="text" name="string" id="string-verificar" placeholder="Insira a frase">
-                                        <button type="submit">Verificar</button>
-                                    </div>
+                            <!-- Verificar Anagrama -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Verificar Anagrama</h6>
                                 </div>
+                                <div class="card-body">
+                                    <input class="text-input col-lg-8" type="text" name="string" id="string-verificar1" placeholder="Insira a primeira frase">
+                                    <input class="text-input col-lg-8" type="text" name="string" id="string-verificar2" placeholder="Insira a segunda frase">
+                                    <button type="button" onclick="areAnagrams()">Verificar</button>
+                                </div>
+                                <div class="card-footer">
+                                    Resultado: <span id="resultado-verificar"></span>
+                                </div>
+                            </div>
 
                         </div>
 
